@@ -3,49 +3,83 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Marani — Privacy Policy</title>
-<style>
-  :root { --cream:#FDF8F4; --burgundy:#651C22; --ink:#2a1a1c; }
-  body { margin:0; background:var(--cream); color:var(--ink); font:17px/1.6 -apple-system, "Avenir Next", Helvetica, Arial, sans-serif; }
-  main { max-width:680px; margin:0 auto; padding:48px 20px 80px; }
-  h1 { color:var(--burgundy); letter-spacing:.12em; text-transform:uppercase; font-size:1.6rem; margin:0 0 4px; }
-  h2 { color:var(--burgundy); font-size:1.1rem; margin:2rem 0 .3rem; }
-  .sub { color:#7a6a6c; margin:0 0 1.5rem; }
-  a { color:var(--burgundy); }
-  li { margin:.3rem 0; }
-</style>
+<title>Marani Privacy Policy</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=DM+Serif+Display&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 <main>
-<h1>Marani</h1>
-<p class="sub">Privacy Policy &middot; Last updated November 8, 2026</p>
+<p class="wordmark">MARANI</p>
+<h1>Privacy Policy</h1>
+<p class="sub">Last updated November 12, 2026 &middot; applies to Marani 1.1 and later</p>
 
-<p>Marani is a personal wine-cellar app. It has no accounts, no servers of its own, and no analytics or advertising. <strong>I do not collect, store, or sell any of your data.</strong></p>
+<p class="lead">Marani is a personal wine cellar and a small social club for wine lovers. You can use the cellar without an account. If you create one, a few things are stored in the cloud so friends can find you, follow you and see what&rsquo;s on your shelf. <strong>Nothing is sold, there are no ads, and there is no tracking or analytics.</strong></p>
 
-<h2>What stays on your phone</h2>
-<p>Your bottles, notes and photos are stored only on your device. Marani does not upload them anywhere. If you delete the app, that data is deleted with it.</p>
+<nav class="toc">
+  <a href="#phone">On your phone</a>
+  <a href="#account">If you create an account</a>
+  <a href="#sharing">Who can see what</a>
+  <a href="#services">Services we use</a>
+  <a href="#delete">Deleting your data</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<h2 id="phone">What stays on your phone</h2>
+<p>Your bottles, photos, tasting notes, quantities, wishlist and opened-bottle history are stored on your device. Photos, notes and quantities are never uploaded, even if you have an account. If you delete the app, this data is deleted with it.</p>
 
 <h2>Reading wine labels</h2>
-<p>By default, labels are read <strong>on your device</strong> using Apple&rsquo;s text recognition and, on supported iPhones, Apple&rsquo;s on-device language model. The photo never leaves your phone.</p>
-<p>Optionally, you can add your own Anthropic API key in Settings and choose &ldquo;Claude&rdquo; as the label reader. If you do, the label photo you scan is sent directly from your phone to Anthropic (api.anthropic.com) using your key, and is handled under Anthropic&rsquo;s terms and privacy policy. I never see it.</p>
+<p>By default, labels are read <strong>on your device</strong> with Apple&rsquo;s text recognition and, on supported iPhones, Apple&rsquo;s on-device language model. The optional &ldquo;Remove background&rdquo; feature also runs on your device. The photo never leaves your phone.</p>
+<p>If you choose to add your own Anthropic API key in Settings and pick &ldquo;Claude&rdquo; as the label reader, the label photo you scan is sent from your phone directly to Anthropic (api.anthropic.com) with your key, under Anthropic&rsquo;s terms. We never see it.</p>
 
-<h2>Third-party services the app contacts</h2>
+<h2 id="account">If you create an account</h2>
+<p>An account is optional. You can sign in with Apple, Google, or an email and password. When you do, we store:</p>
 <ul>
-  <li><strong>Apple (geocoding):</strong> to place a wine&rsquo;s region on the Map tab, the region name (for example &ldquo;Vosne-Roman&eacute;e&rdquo;) is sent to Apple&rsquo;s geocoding service.</li>
-  <li><strong>Map tiles:</strong> the Map tab loads map tiles from Esri and the Leaflet library from unpkg.com. Like any web request, this exposes your IP address to those providers. No wine data or personal information is sent.</li>
+  <li><strong>Sign-in details:</strong> a user ID, and your email address if you use Google or email sign-in. With Sign in with Apple you can hide your email; Apple then gives us a private relay address.</li>
+  <li><strong>Your profile:</strong> the display name and handle you choose (for example &ldquo;Elene&rsquo;s Marani&rdquo;, @elene), and whether your Marani is public or private.</li>
+  <li><strong>Your shared shelf:</strong> for each wine currently on your shelf, the producer, wine name, vintage, style, grapes, region, country and the date you added it, plus how many wines you have. Wines you open, finish or delete are removed from the shared copy.</li>
+  <li><strong>Your connections:</strong> who you follow, who follows you, follow requests, and anyone you&rsquo;ve blocked.</li>
+  <li><strong>Events:</strong> events you host (title, date and time, place and details you enter) and events you say you&rsquo;re going to.</li>
+  <li><strong>Reports:</strong> if you report someone, your report (who you reported, the reason and any details you write).</li>
+</ul>
+<p>We use this only to run Marani&rsquo;s features. We don&rsquo;t use it for advertising, we don&rsquo;t sell it, and we don&rsquo;t share it with anyone except the service providers listed below that store it for us.</p>
+
+<h2 id="sharing">Who can see what</h2>
+<ul>
+  <li><strong>Your profile</strong> (name, handle, wine count) can be seen by other signed-in members, so friends can find you.</li>
+  <li><strong>Your shared shelf</strong> starts <strong>private</strong>: only people you approve can see it. If you switch on &ldquo;Share my Marani publicly&rdquo;, any signed-in member can see it.</li>
+  <li><strong>Events you host</strong> are visible to signed-in members, and appear to the people who follow you. The guest list shows the names of people who said they&rsquo;re going. Share exact home addresses with guests directly, not in the event.</li>
+  <li><strong>People you block</strong> can no longer follow you or see your shelf.</li>
+  <li><strong>Reports</strong> are private. Only the Marani team can read them.</li>
+</ul>
+
+<h2 id="services">Services we use</h2>
+<ul>
+  <li><strong>Google Firebase</strong> (Authentication and Cloud Firestore) stores account and shared data on servers in the United States. Google processes it on our behalf under its <a href="https://firebase.google.com/support/privacy">Firebase privacy terms</a>.</li>
+  <li><strong>Sign in with Apple / Google Sign-In</strong> handle signing in. They share your sign-in details with us as described above.</li>
+  <li><strong>Apple geocoding:</strong> to place a wine region on the map, the region name (for example &ldquo;Barolo, Italy&rdquo;) is sent to Apple.</li>
+  <li><strong>Map tiles:</strong> the map loads tiles from Esri and the Leaflet library from unpkg.com. As with any web request this exposes your IP address to them. No wine or personal data is sent.</li>
 </ul>
 
 <h2>Camera and photos</h2>
-<p>Marani asks for camera or photo access only so you can photograph or choose a label picture. Photos you choose are used inside the app only.</p>
+<p>Marani asks for camera or photo access only so you can photograph or choose a label picture. Photos are used inside the app and stay on your device.</p>
+
+<h2 id="delete">Deleting your data</h2>
+<p>You can delete your account at any time in the app: <strong>Vineyard &rarr; Delete account</strong>. This permanently removes your sign-in account, profile, handle, shared shelf, follows, blocks, events you host and your RSVPs. The bottles on your phone are not affected. Reports you filed about others may be kept as moderation records.</p>
+<p>You can also change your sharing at any time by switching your Marani back to private, removing followers, or signing out.</p>
 
 <h2>Children</h2>
-<p>Marani is about wine and is not directed at children.</p>
+<p>Marani is about wine and is intended for adults of legal drinking age. It is not directed at children, and we don&rsquo;t knowingly collect data from anyone under 18.</p>
+
+<h2>Community</h2>
+<p>Using Marani&rsquo;s social features means agreeing to the <a href="guidelines.html">Community Guidelines and Terms</a>.</p>
 
 <h2>Changes</h2>
-<p>If this policy changes, the updated version will be posted at this address with a new date.</p>
+<p>If this policy changes, the new version will be posted here with a new date. Significant changes will also be mentioned in the app&rsquo;s update notes.</p>
 
-<h2>Contact</h2>
-<p>Questions: <a href="mailto:eljikia@gmail.com">eljikia@gmail.com</a></p>
+<h2 id="contact">Contact</h2>
+<p>Questions or requests about your data: <a href="mailto:eljikia@gmail.com">eljikia@gmail.com</a></p>
 </main>
 </body>
 </html>

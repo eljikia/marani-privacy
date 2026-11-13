@@ -1,0 +1,67 @@
+/* MARANI brand kit v1.0 tokens */
+:root {
+  --burgundy: #681A28;
+  --wine-red: #8D2638;
+  --terracotta: #E87942;
+  --lavender: #D9B5D3;
+  --cream: #F9F5EF;
+  --blush: #F5E2DF;
+  --charcoal: #342B2B;
+  --muted: #806A6B;
+}
+* { box-sizing: border-box; }
+html { background: var(--cream); }
+body {
+  margin: 0;
+  background: var(--cream);
+  color: var(--charcoal);
+  font: 400 17px/1.6 'DM Sans', -apple-system, Helvetica, Arial, sans-serif;
+  -webkit-text-size-adjust: 100%;
+}
+main { max-width: 700px; margin: 0 auto; padding: 48px 24px 96px; }
+.wordmark {
+  margin: 0 0 28px;
+  color: var(--burgundy);
+  font-weight: 600;
+  letter-spacing: .32em;
+  font-size: 14px;
+}
+h1 {
+  margin: 0 0 6px;
+  color: var(--burgundy);
+  font: 400 40px/1.12 'DM Serif Display', Georgia, serif;
+}
+h2 {
+  margin: 2.2rem 0 .4rem;
+  color: var(--burgundy);
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.3;
+  scroll-margin-top: 16px;
+}
+.sub { margin: 0 0 1.6rem; color: var(--muted); font-size: 15px; }
+.lead {
+  margin: 0 0 1.4rem;
+  padding: 18px 20px;
+  background: #fff;
+  border: 1px solid #E9DCD3;
+  border-radius: 20px;
+}
+a { color: var(--burgundy); text-underline-offset: 2px; }
+a:hover { color: var(--wine-red); }
+ul { padding-left: 1.2rem; }
+li { margin: .4rem 0; }
+li::marker { color: var(--terracotta); }
+.toc { display: flex; flex-wrap: wrap; gap: 8px; margin: 0 0 1rem; }
+.toc a {
+  padding: 6px 12px;
+  background: var(--blush);
+  border-radius: 999px;
+  font-size: 14px;
+  font-weight: 500;
+  text-decoration: none;
+}
+@media (max-width: 480px) {
+  main { padding: 32px 20px 72px; }
+  h1 { font-size: 32px; }
+}
